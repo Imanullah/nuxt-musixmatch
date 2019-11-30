@@ -6,7 +6,7 @@
 [![Codecov][codecov-src]][codecov-href]
 [![License][license-src]][license-href]
 
-> nuxt musixmath api 
+> nuxt musixmatch api 
 
 [📖 **Release Notes**](./CHANGELOG.md)
 
