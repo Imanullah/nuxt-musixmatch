@@ -1,0 +1,46 @@
+{
+  "name": "musixmatch",
+  "version": "0.1.1",
+  "description": "nuxt musixmatch api ",
+  "license": "MIT",
+  "contributors": [
+    {
+      "name": "IMAN"
+    }
+  ],
+  "main": "lib/module.js",
+  "repository": "https://github.com/Imanullah/musixmatch.git",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "dev": "nuxt example",
+    "lint": "eslint --ext .js,.vue example lib test",
+    "test": "yarn lint && jest",
+    "release": "standard-version && git push --follow-tags && npm publish"
+  },
+  "files": [
+    "lib"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "latest",
+    "@babel/preset-env": "latest",
+    "@commitlint/cli": "latest",
+    "@commitlint/config-conventional": "latest",
+    "@nuxtjs/axios": "^5.8.0",
+    "@nuxtjs/eslint-config": "latest",
+    "babel-eslint": "latest",
+    "babel-jest": "latest",
+    "codecov": "latest",
+    "eslint": "latest",
+    "get-port": "latest",
+    "husky": "latest",
+    "jest": "latest",
+    "nuxt": "latest",
+    "query-parse": "latest",
+    "request": "latest",
+    "request-promise-native": "latest",
+    "standard-version": "latest"
+  }
+}
