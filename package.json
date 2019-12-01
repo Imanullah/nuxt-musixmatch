@@ -1,6 +1,6 @@
 {
   "name": "musixmatch",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "NUXTJS module musixmatch api",
   "license": "MIT",
   "contributors": [
@@ -19,7 +19,7 @@
   "scripts": {
     "dev": "nuxt example",
     "lint": "eslint lib test",
-    "test": "yarn lint && jest",
+    "test": "yarn lint && jest --detectOpenHandles",
     "release": "yarn test && standard-version && git push --follow-tags && npm publish"
   },
   "files": ["lib"],
@@ -38,7 +38,7 @@
     "get-port": "latest",
     "husky": "latest",
     "jest": "latest",
-    "nuxt": "latest",
+    "nuxt-edge": "latest",
     "request": "latest",
     "request-promise-native": "latest",
     "standard-version": "latest"
