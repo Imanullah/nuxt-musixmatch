@@ -9,7 +9,10 @@
     }
   ],
   "main": "lib/module.js",
-  "repository": "https://github.com/Imanullah/musixmatch.git",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Imanullah/musixmatch.git"
+  },
   "publishConfig": {
     "access": "public"
   },
@@ -40,5 +43,11 @@
     "request": "latest",
     "request-promise-native": "latest",
     "standard-version": "latest"
+  },
+  "bugs": {
+    "url": "https://github.com/Imanullah/musixmatch/issues"
+  },
+  "homepage": {
+    "url": "https://github.com/Imanullah/musixmatch#readme"
   }
 }

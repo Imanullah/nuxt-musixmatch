@@ -6,7 +6,7 @@
 [![Codecov][codecov-src]][codecov-href]
 [![License][license-src]][license-href]
 
-> nuxt musixmatch api 
+> nuxt musixmatch api
 
 [📖 **Release Notes**](./CHANGELOG.md)
 
@@ -25,11 +25,38 @@ yarn add musixmatch # or npm install musixmatch
   modules: [
     // Simple usage
     'musixmatch',
-
     // With options
     ['musixmatch', { /* module options */ }]
   ]
 }
+```
+## Module Options
+
+```js
+{
+  modules: [
+    // Simple usage
+    'musixmatch'
+  ],
+  // With options
+  musixmatch: {
+    apikey: '<YOUR API MUSIXMATCH API KEY>' //Required
+    rootURL: '<Musixmatch API version root URL>' //Optional default 'https://api.musixmatch.com/ws/1.1/'
+    format: 'json' //optional default is json
+    chorsURL: '' //Optional if you have problem with ChORS default is 'https://cors-anywhere.herokuapp.com/'
+  }
+}
+```
+## Quick Usage
+Now you can use all Musixmatch services with $this.musixmatch and followed by method
+```js
+
+this.$musixmatch.chartArtists({ page: 1, page_size: 3, country: 'us'}).then(function (res) {
+  if (res != null) {
+    console.log(res.artist_list)
+  }
+})
+
 ```
 
 ## Development
