@@ -11,6 +11,6 @@ module.exports = {
 		{ handler: require('../') },
   ],
 	musixmatch: {
-		apikey: '<YOUR',
+		apikey: '<Your Musixmatch api key',
 	}
 }

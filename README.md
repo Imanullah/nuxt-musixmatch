@@ -48,7 +48,7 @@ yarn add musixmatch # or npm install musixmatch
 }
 ```
 ## Quick Usage
-Now you can use all Musixmatch services with $this.musixmatch and followed by method
+Now you can use all Musixmatch services with `$this.musixmatch` and followed by method
 ```js
 
 this.$musixmatch.chartArtists({ page: 1, page_size: 3, country: 'us'}).then(function (res) {
