@@ -8,9 +8,10 @@ module.exports = {
 		resourceHints: false
 	},
 	modules: [
-		{ handler: require('../') },
+		{ handler: require('../') }
   ],
 	musixmatch: {
-		apikey: '<Your Musixmatch api key',
+		apikey: '<API KEY>',
+		corsURL: ''
 	}
 }

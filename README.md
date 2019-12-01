@@ -6,7 +6,11 @@
 [![Codecov][codecov-src]][codecov-href]
 [![License][license-src]][license-href]
 
-> nuxt musixmatch api
+NuxtJS module musixmatch API
+The simplified NuxtJS module for request Musixmatch API support. Inspire by https://github.com/c0b41/musixmatch.
+Request are pretty awesome, but I found myself using it into NuxtJS
+
+Also check out [here](https://github.com/c0b41/musixmatch#methods) to using the methods that are very similar to request
 
 [📖 **Release Notes**](./CHANGELOG.md)
 
@@ -40,10 +44,10 @@ yarn add musixmatch # or npm install musixmatch
   ],
   // With options
   musixmatch: {
-    apikey: '<YOUR API MUSIXMATCH API KEY>' //Required
+    apikey: '<Your Musixmatch API Key>' //Required
     rootURL: '<Musixmatch API version root URL>' //Optional default 'https://api.musixmatch.com/ws/1.1/'
     format: 'json' //optional default is json
-    chorsURL: '' //Optional if you have problem with ChORS default is 'https://cors-anywhere.herokuapp.com/'
+    corsURL: '' //Optional if you have problem with CORS default is 'https://cors-anywhere.herokuapp.com/'
   }
 }
 ```
@@ -59,11 +63,8 @@ this.$musixmatch.chartArtists({ page: 1, page_size: 3, country: 'us'}).then(func
 
 ```
 
-## Development
-
-1. Clone this repository
-2. Install dependencies using `yarn install` or `npm install`
-3. Start development server using `npm run dev`
+## Methods
+For more information how to use Methods and Params with example... please refer to https://github.com/c0b41/musixmatch#methods
 
 ## License
 
