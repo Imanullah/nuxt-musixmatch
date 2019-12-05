@@ -2,8 +2,6 @@
 
 [![npm version][npm-version-src]][npm-version-href]
 [![npm downloads][npm-downloads-src]][npm-downloads-href]
-[![Circle CI][circle-ci-src]][circle-ci-href]
-[![Codecov][codecov-src]][codecov-href]
 [![License][license-src]][license-href]
 
 NuxtJS module musixmatch API
@@ -71,6 +69,11 @@ For more information how to use Methods and Params with example... please refer 
 [MIT License](./LICENSE)
 
 Copyright (c) IMAN
+
+https://www.axfon.com
+
+https://atel.us
+
 
 <!-- Badges -->
 [npm-version-src]: https://img.shields.io/npm/v/musixmatch/latest.svg?style=flat-square

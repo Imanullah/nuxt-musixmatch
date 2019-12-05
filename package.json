@@ -1,7 +1,7 @@
 {
-  "name": "musixmatch",
+  "name": "nuxt-musixmatch",
   "version": "0.1.1",
-  "description": "NUXTJS module musixmatch api",
+  "description": "NuxJS module musixmatch api",
   "license": "MIT",
   "contributors": [
     {
@@ -11,7 +11,7 @@
   "main": "lib/module.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Imanullah/musixmatch.git"
+    "url": "git+https://github.com/Imanullah/nuxt-musixmatch.git"
   },
   "publishConfig": {
     "access": "public"
@@ -19,18 +19,19 @@
   "scripts": {
     "dev": "nuxt example",
     "lint": "eslint lib test",
-    "test": "yarn lint && jest --detectOpenHandles",
+    "test": "yarn lint && jest",
     "release": "yarn test && standard-version && git push --follow-tags && npm publish"
   },
   "files": ["lib"],
-  "dependencies": {},
+  "dependencies": {
+    "musixmatch": "latest"
+  },
   "devDependencies": {
     "@babel/core": "latest",
     "@babel/preset-env": "latest",
     "@commitlint/cli": "latest",
     "@commitlint/config-conventional": "latest",
     "@nuxtjs/eslint-config": "latest",
-    "axios": "latest",
     "babel-eslint": "latest",
     "babel-jest": "latest",
     "codecov": "latest",
@@ -43,10 +44,19 @@
     "request-promise-native": "latest",
     "standard-version": "latest"
   },
+  "keywords": [
+    "musixmatch",
+    "nuxt musixmatch",
+    "api",
+    "lyrics",
+    "musixmatch-lyrics",
+    "lyrics-api",
+    "music-lyrics"
+  ],
   "bugs": {
-    "url": "https://github.com/Imanullah/musixmatch/issues"
+    "url": "https://github.com/Imanullah/nuxt-musixmatch/issues"
   },
   "homepage": {
-    "url": "https://github.com/Imanullah/musixmatch#readme"
+    "url": "https://github.com/Imanullah/nuxt-musixmatch#readme"
   }
 }
