@@ -1,6 +1,6 @@
 {
   "name": "nuxt-musixmatch",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "NuxJS module musixmatch api",
   "license": "MIT",
   "contributors": [
