@@ -11,7 +11,7 @@ module.exports = {
 		{ handler: require('../') }
   ],
 	musixmatch: {
-		apikey: '<Your musixmatch API key>'
+		apikey: '<Your Musixmatch API Key>'
 		// corsURL: '',
 	}
 }
