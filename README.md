@@ -57,7 +57,7 @@ yarn add musixmatch # or npm install musixmatch
 
     //You can easily integrate to NuxtJS Proxy Module.
     //This is highly recommended to prevent CORS and production/deployment problems.
-    //See below simple configuration 
+    //See below simple configuration
     proxyURL: ''
   }
 }
@@ -133,10 +133,10 @@ https://atel.us
 
 <!-- Badges -->
 [npm-version-src]: https://img.shields.io/npm/v/musixmatch/latest.svg?style=flat-square
-[npm-version-href]: https://npmjs.com/package/musixmatch
+[npm-version-href]: https://npmjs.com/package/nuxt-musixmatch
 
 [npm-downloads-src]: https://img.shields.io/npm/dt/musixmatch.svg?style=flat-square
-[npm-downloads-href]: https://npmjs.com/package/musixmatch
+[npm-downloads-href]: https://npmjs.com/package/nuxt-musixmatch
 
 [circle-ci-src]: https://img.shields.io/circleci/project/github/https://github.com.svg?style=flat-square
 [circle-ci-href]: https://circleci.com/gh/https://github.com
@@ -145,4 +145,4 @@ https://atel.us
 [codecov-href]: https://codecov.io/gh/https://github.com
 
 [license-src]: https://img.shields.io/npm/l/musixmatch.svg?style=flat-square
-[license-href]: https://npmjs.com/package/musixmatch
+[license-href]: https://npmjs.com/package/nuxt-musixmatch
