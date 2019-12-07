@@ -3,12 +3,6 @@
   "version": "0.1.4",
   "description": "NuxJS module musixmatch api",
   "license": "MIT",
-  "config": {
-    "nuxt": {
-      "host": "0.0.0.0",
-      "port": "2020"
-    }
-  },
   "contributors": [
     {
       "name": "IMAN"
@@ -30,7 +24,7 @@
   },
   "files": ["lib"],
   "dependencies": {
-    "@nuxtjs/axios": "^5.8.0"
+    "@nuxtjs/axios": "latest"
   },
   "devDependencies": {
     "@babel/core": "latest",
