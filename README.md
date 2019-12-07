@@ -98,8 +98,8 @@ musixmatch: {
 
 ```js
 modules: [
-  '@nuxtjs/axios',
-  'nuxt-musixmatch'
+  'nuxt-musixmatch',
+  '@nuxtjs/axios'
 ],
 
 musixmatch: {
