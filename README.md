@@ -42,10 +42,23 @@ yarn add musixmatch # or npm install musixmatch
   ],
   // With options
   musixmatch: {
-    apikey: '<Your Musixmatch API Key>' //Required
-    rootURL: '<Musixmatch API version root URL>' //Optional default 'https://api.musixmatch.com/ws/1.1/'
-    format: 'json' //optional default is json
-    corsURL: '' //Optional if you have problem with CORS default is 'https://cors-anywhere.herokuapp.com/'
+    //Required
+    apikey: '<Your Musixmatch API Key>'
+
+    //Optional default 'https://api.musixmatch.com/ws/1.1/'
+    baseURL: '<Musixmatch API version root URL>'
+
+    //optional default is json
+    format: 'json'
+
+    //Optional if you have problem with CORS default is 'https://cors-anywhere.herokuapp.com/'
+    //if you want to remove default cors-anywhere you should set value to be ''
+    corsURL: ''
+
+    //You can easily integrate to NuxtJS Proxy Module.
+    //This is highly recommended to prevent CORS and production/deployment problems.
+    //See below simple configuration 
+    proxyURL: ''
   }
 }
 ```
@@ -63,6 +76,49 @@ this.$musixmatch.chartArtists({ page: 1, page_size: 3, country: 'us'}).then(func
 
 ## Methods
 For more information how to use Methods and Params with example... please refer to https://github.com/c0b41/musixmatch#methods
+
+
+## Basic Example Configuration
+
+1. Using `https://cors-anywhere.herokuapp.com/` to prevent CORS problems
+
+```js
+modules: [
+  'nuxt-musixmatch'
+],
+
+musixmatch: {
+  apikey: '<API Key>',
+  corsURL: 'https://cors-anywhere.herokuapp.com/'
+},
+
+```
+
+2. OR integrate to `@nuxtjs/axios` and Proxy Module to prevent CORS problems
+
+```js
+modules: [
+  '@nuxtjs/axios',
+  'nuxt-musixmatch'
+],
+
+musixmatch: {
+  apikey: '<API Key>',
+  proxyURL: '/api/'
+},
+
+axios: {
+  proxy: true
+},
+
+proxy: {
+  '/api/': {
+    target: 'https://api.musixmatch.com/ws/1.1/',
+    pathRewrite: { '^/api/': '' }
+  }
+},
+
+```
 
 ## License
 
