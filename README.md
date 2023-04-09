@@ -126,10 +126,6 @@ proxy: {
 
 Copyright (c) IMAN
 
-https://www.axfon.com
-
-https://atel.us
-
 
 <!-- Badges -->
 [npm-version-src]: https://img.shields.io/npm/v/musixmatch/latest.svg?style=flat-square
